@@ -1,7 +1,7 @@
 pipeline {
   agent { label 'windows' }
   options {
-    timestamps()
+   // timestamps()
     disableConcurrentBuilds()
     buildDiscarder(logRotator(numToKeepStr: '30'))
   }
